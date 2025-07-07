@@ -1,60 +1,211 @@
-# FinTrakk - Personal Financial Tracker
+# FinTrakk 💰
 
-A personal financial tracking application I built to manage my own finances, track spending habits, and set financial goals.
+A modern, responsive personal financial tracking application built with Next.js 15 and React 19. Track your expenses, set budgets, visualize spending patterns, and achieve your financial goals with an intuitive and beautiful interface.
 
-## About
+![FinTrakk Dashboard](https://img.shields.io/badge/Next.js-15.2.4-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.17-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-This is a personal project I developed to help me better understand and manage my financial situation. It's a comprehensive tool that allows me to track transactions, set budgets, monitor spending patterns, and visualize my financial data.
+## ✨ Features
 
-## Features
+### 📊 **Comprehensive Dashboard**
+- Real-time financial overview with key metrics
+- Interactive charts and visualizations
+- Quick access to recent transactions
+- Budget progress tracking
 
-- **Dashboard**: Overview of my financial status with key metrics
-- **Transaction Management**: Add, edit, and categorize transactions
-- **Budget Tracking**: Set monthly budgets and track progress
-- **Financial Goals**: Set and monitor savings goals
-- **Analytics**: Visualize spending patterns and trends
-- **Responsive Design**: Works on desktop and mobile devices
+### 💳 **Transaction Management**
+- Add, edit, and categorize transactions
+- Bulk transaction operations
+- Smart categorization with custom categories
+- Transaction history with advanced filtering
 
-## Tech Stack
+### 🎯 **Budget & Goals**
+- Set monthly budgets by category
+- Track spending against budgets
+- Create and monitor financial goals
+- Progress visualization with charts
 
-- **Frontend**: Next.js 15, React 19, TypeScript
-- **Styling**: Tailwind CSS, Radix UI Components
-- **Animations**: Framer Motion
-- **Charts**: Recharts for data visualization
-- **Forms**: React Hook Form with Zod validation
+### 📈 **Advanced Analytics**
+- Spending pattern analysis
+- Category-wise expense breakdown
+- Monthly/yearly trend comparisons
+- Interactive charts using Recharts
 
-## Getting Started
+### 🎨 **Modern UI/UX**
+- Responsive design for all devices
+- Dark/light theme support
+- Smooth animations with Framer Motion
+- Accessible components with Radix UI
 
-```bash
-# Clone the repository
-git clone <your-repo-url>
+### 🔧 **Developer Experience**
+- TypeScript for type safety
+- ESLint configuration
+- Modern React patterns (hooks, context)
+- Component-driven architecture
 
-# Install dependencies
-pnpm install
+## 🚀 Quick Start
 
-# Run development server
-pnpm dev
+### Prerequisites
+- Node.js 18+ 
+- pnpm (recommended) or npm
 
-# Open http://localhost:3000 in your browser
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/fintrakk.git
+   cd fintrakk
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   # or
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🛠️ Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start development server |
+| `pnpm build` | Build for production |
+| `pnpm start` | Start production server |
+| `pnpm lint` | Run ESLint |
+
+## 🏗️ Tech Stack
+
+### Frontend Framework
+- **Next.js 15** - React framework with App Router
+- **React 19** - Latest React with concurrent features
+- **TypeScript** - Type-safe development
+
+### Styling & UI
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Accessible component primitives
+- **Lucide React** - Beautiful icons
+- **Framer Motion** - Smooth animations
+
+### Data Visualization
+- **Recharts** - Composable charting library
+- **React Hook Form** - Performant forms
+- **Zod** - TypeScript-first schema validation
+
+### Development Tools
+- **ESLint** - Code linting
+- **PostCSS** - CSS processing
+- **Autoprefixer** - CSS vendor prefixes
+
+## 📁 Project Structure
+
+```
+fintrakk/
+├── app/                    # Next.js App Router
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   ├── loading.tsx        # Loading component
+│   └── page.tsx           # Home page
+├── components/            # React components
+│   ├── ui/               # Reusable UI components
+│   ├── layout/           # Layout components
+│   ├── pages/            # Page-specific components
+│   └── providers/        # Context providers
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions
+├── public/               # Static assets
+└── styles/               # Additional styles
 ```
 
-## Development Commands
+## 🎯 Key Components
 
-```bash
-pnpm dev      # Start development server
-pnpm build    # Build for production
-pnpm start    # Start production server
-pnpm lint     # Run ESLint
+### Core Features
+- **Dashboard** - Financial overview and metrics
+- **Transaction History** - Complete transaction management
+- **Analytics** - Spending analysis and trends
+- **Budgets & Goals** - Budget tracking and goal setting
+- **Profile & Settings** - User preferences and configuration
+
+### UI Components
+- **Responsive Navigation** - Mobile-friendly navigation
+- **Modal System** - Transaction and settings modals
+- **Chart Components** - Data visualization
+- **Form Components** - Validated input forms
+- **Theme System** - Dark/light mode support
+
+## 🔧 Configuration
+
+### Environment Variables
+Create a `.env.local` file in the root directory:
+
+```env
+# Add your environment variables here
+NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
 
-## Project Structure
+### Tailwind Configuration
+The project uses a custom Tailwind configuration with:
+- Custom color palette
+- Animation utilities
+- Responsive breakpoints
+- Component variants
 
-- `app/` - Next.js app router pages and layouts
-- `components/` - Reusable React components
-- `components/ui/` - UI component library
-- `hooks/` - Custom React hooks
-- `lib/` - Utility functions and configurations
+## 📱 Responsive Design
 
-## Personal Notes
+FinTrakk is fully responsive and optimized for:
+- **Desktop** - Full-featured dashboard experience
+- **Tablet** - Touch-friendly interface
+- **Mobile** - Streamlined mobile navigation
 
-This project serves as both a practical tool for my financial management and a learning experience in modern web development. I've focused on creating a clean, intuitive interface that makes financial tracking less daunting and more engaging.
+## 🎨 Customization
+
+### Themes
+- Built-in dark/light theme support
+- Customizable color schemes
+- Smooth theme transitions
+
+### Components
+- Modular component architecture
+- Easy to extend and customize
+- Consistent design system
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/) for the amazing React framework
+- [Radix UI](https://www.radix-ui.com/) for accessible components
+- [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
+- [Recharts](https://recharts.org/) for beautiful charts
+- [Framer Motion](https://www.framer.com/motion/) for smooth animations
+
+## 📞 Support
+
+If you have any questions or need help:
+- Open an [issue](https://github.com/yourusername/fintrakk/issues)
+- Check the [documentation](https://github.com/yourusername/fintrakk/wiki)
+
+---
+
+**Built with ❤️ using Next.js, React, and TypeScript**
