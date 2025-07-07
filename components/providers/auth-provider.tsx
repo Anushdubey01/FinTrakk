@@ -43,7 +43,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     // Simulate checking for existing session
     const checkAuth = async () => {
-      const savedUser = localStorage.getItem("fintrack-user")
+      const savedUser = localStorage.getItem("fintrakk-user")
       if (savedUser) {
         setUser(JSON.parse(savedUser))
       }
@@ -79,7 +79,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
 
       setUser(mockUser)
-      localStorage.setItem("fintrack-user", JSON.stringify(mockUser))
+      localStorage.setItem("fintrakk-user", JSON.stringify(mockUser))
       showToast("Welcome back!", "success")
     } catch (error) {
       showToast("Login failed. Please try again.", "error")
@@ -113,7 +113,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
 
       setUser(mockUser)
-      localStorage.setItem("fintrack-user", JSON.stringify(mockUser))
+      localStorage.setItem("fintrakk-user", JSON.stringify(mockUser))
       showToast("Account created successfully!", "success")
     } catch (error) {
       showToast("Signup failed. Please try again.", "error")
@@ -125,7 +125,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const logout = () => {
     setUser(null)
-    localStorage.removeItem("fintrack-user")
+    localStorage.removeItem("fintrakk-user")
     showToast("Logged out successfully", "success")
   }
 
@@ -139,7 +139,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
       const updatedUser = { ...user, ...updates }
       setUser(updatedUser)
-      localStorage.setItem("fintrack-user", JSON.stringify(updatedUser))
+      localStorage.setItem("fintrakk-user", JSON.stringify(updatedUser))
       showToast("Profile updated successfully!", "success")
     } catch (error) {
       showToast("Failed to update profile", "error")

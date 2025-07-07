@@ -38,7 +38,7 @@ export function Navigation({ currentPage, onPageChange, onAddClick }: Navigation
                 <span className="text-lg font-bold text-white">F</span>
               </div>
               <h1 className="text-xl font-bold bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text text-transparent">
-                FinTrack
+                FinTrakk
               </h1>
             </div>
 
@@ -97,7 +97,7 @@ export function Navigation({ currentPage, onPageChange, onAddClick }: Navigation
                 <span className="text-sm font-bold text-white">F</span>
               </div>
               <h1 className="text-lg font-bold bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text text-transparent">
-                FinTrack
+                FinTrakk
               </h1>
             </div>
 

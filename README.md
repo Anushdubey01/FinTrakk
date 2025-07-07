@@ -1,4 +1,4 @@
-# Fintrack - Personal Financial Tracker
+# FinTrakk - Personal Financial Tracker
 
 A personal financial tracking application I built to manage my own finances, track spending habits, and set financial goals.
 

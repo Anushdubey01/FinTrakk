@@ -69,7 +69,7 @@ export function LoginPage() {
             <span className="text-2xl font-bold text-white">F</span>
           </div>
           <h1 className="text-3xl font-bold bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text text-transparent">
-            FinTrack
+            FinTrakk
           </h1>
           <p className="text-slate-600 dark:text-slate-400 mt-2">Your premium finance companion</p>
         </motion.div>
@@ -83,7 +83,7 @@ export function LoginPage() {
             <CardDescription>
               {activeTab === "signin"
                 ? "Sign in to your account to continue"
-                : "Join FinTrack and take control of your finances"}
+                : "Join FinTrakk and take control of your finances"}
             </CardDescription>
           </CardHeader>
 

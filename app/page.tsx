@@ -55,7 +55,7 @@ function AppContent() {
   )
 }
 
-export default function FinTrackApp() {
+export default function FinTrakkApp() {
   return (
     <ThemeProvider>
       <ToastProvider>

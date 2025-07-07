@@ -27,7 +27,7 @@ export function LoadingScreen() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          FinTrack
+                      FinTrakk
         </motion.h1>
 
         <motion.div
